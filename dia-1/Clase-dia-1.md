@@ -88,3 +88,20 @@ Plantear html semántico
   - No numeradas: ul / li
   - Descriptivas: dl / dt / dd
 - Bloques: main, div
+
+## Imagenes, multimedia y objetos
+* Imagenes
+  - <img >
+  - <picture><source>: sirve para diferentes versiones de la imagen, se le puede poner un mediaquery para que se presente según el ancho de una pantalla, tiene sentido mayormente en diseño responsive.
+  - <figure><figcaption>: definir una figura, con figcaption damos el pie de la imagen.
+* Elementos multimedia: <audio><video><track>
+* Elementos embebidos: <iframe><object><param>
+
+## Tablas
+
+## Niveles de agrupacion de tablas
+Hay 3 elementos: separan de manera semantica lo que son los datos de la tabla
+    - <thead>: agrupa los elementos de la cabecera de la tabla
+    - <tbody>: agrupa los elementos de contenido
+    - <tfood>: agrupa elementos del pie de la tabla
+
