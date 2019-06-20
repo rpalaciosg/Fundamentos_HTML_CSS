@@ -5,3 +5,6 @@ Este repositorio contiene anotaciones y practicas del curso de Fundamentos de HT
 ## Día-1
 Clase día uno, se revisa html semantico, enlaces, imagenes, videos, tablas.
 Se inicia maqutación proyecto CV.
+
+## Día-2
+Empiezo clase del día 2.
