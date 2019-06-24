@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FrontEnd Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            color: crimson;
+        }
+
+        #contacto {
+            background-color: black;
+            color: antiquewhite;
+        }
+
+        .letra-arial {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        * {
+            font-family: Ubuntu, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        #contacto > h1 {
+            color: blue;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -22,7 +49,7 @@
     </header>
     <section id="servicios">
         <h1>Have a Look at my Services</h1>
-        <article>
+        <article class="letra-arial">
             <img src="./img/s1.webp" alt="web design">
             <h2><a href="#">Web Design</a></h2>
             <p>Lorem ipsum <strong>esto es strong</strong> dolor sit amet, consectetur adipisicing elit.
@@ -34,7 +61,7 @@
         <article>
             <img src="./img/s2.png" alt="mobile design">
             <h2><a href="#">Mobile Design</a></h2>
-            <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit.
+            <p class="letra-arial"><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit.
                 Quam numquam, ea ratione, quae cum magni voluptas corrupti
                 quos accusantium tempore similique corporis est aliquid dolorum
                 neque laboriosam hic veritatis esse.
@@ -80,7 +107,7 @@
         </video> -->
     </section>
     <section id="contacto">
-        <h1>Contacto</h1>
+        <h1 class="contact-title">Contacto</h1>
         <form action="" id="contact-form">
             <p>
                 <label for="form-name">Nombre:</label>
