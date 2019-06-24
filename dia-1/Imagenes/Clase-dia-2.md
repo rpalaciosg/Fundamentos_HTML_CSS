@@ -84,3 +84,200 @@ Crea una ventana modal o popup, aunque la funcionalidad debe agregarse por CSS o
     - Accesible Rich Internet Applications
     - Nos da estandares para que nuestra página sea mucho mas accesible.
     - Hay un mundos mas haya del html standar, hay extensiones de html
+
+## Introducción a las hojas de estilo con CSS3
+
+- CSS, cascadins style sheets, hojas de estilo en cascada.
+- Lenguaje apra definir la presentacion de un documento estructurado escrito en un lenguaje de marcado.
+- Diseñado para permitir la separación entre el contenido del documento y la forma de presentarlo.
+
+### ¿Como usar CSS?
+
+- Estilos en línea, mediante el atributo `style.
+- Estilos independientes. Uso de selectores:
+  - Embebidos con la etiqueta <style>
+  - En ficheros CSS independientes
+    ```html
+    <link rel="stylesheet" href="./styles.css">
+    ```
+
+### Sintaxis: selectores, propiedades y directivas
+Las directivas o reglas, permiten importar cosas externas
+```css
+@import url('https://...');
+h1 {
+
+}
+```
+### herramientas y referencias
+- MDN: 
+- Can I Use: le puedo preguntar por cualquier propiedad de CSS o HTML5 y nos dará información sobre el soporte en los navegadores de la caracteristica que se consulta.
+  - PAra cuando en algun navegador que no tiene soporte existen los `polyfill` que son como hacks para poder usar las propiedades no soportadas.
+- Navegador: inspector
+
+### Selectores básicos
+
+- selectores multiples
+  ```css
+  h1, h2, h3 { } //estilos a multiples selectectores
+
+  div p {} //Descendientes de cualquier nivel, calquier p que este dentro de un div
+
+  div > p {} // "Hijos" directos, solo al hijo directo (hijos inmediatos)
+
+  div + p {} // Hermanos adyacentes (inmediatos)
+
+  div ~ p {} // Hermanis en general
+  ```
+
+### Pseudo-elementos y Pseudo-clases
+
+* Pseudoelementos: elementos definidos desde CSS
+  -  ::first-letter
+  -  ::first-line
+  -  ::before {content=""}
+  -  ::after {content=""}
+
+* Pseudoclases: clases aplicadas dinámicamente a elementos reales de HTML en funcion de sus estado. 
+  -  :link, :visited, :active, :focus, :hove, :target, :lang()
+  -  :nth-child(n), :first-child, last-child, only-child
+  -  :nth-of-type(n), :first-of-type, :last-of-type,
+  -  :only-of-type, :not()
+
+### Aplicación de múltiples estilos
+
+* Herencia
+  - Propiedades qe se heredan en los elementos hijos `font-family`, `color...` => afectan al contenido.
+  - Propiedades que no se heredan `margin`, `padding`, `border...` => afectan al contenedor  
+
+* Cascada
+  - agente de usuario: por dfecto/ definidos por el usuario
+  - bloques de CSS: externos / embebidos
+  - Estilos en línea
+
+### Especificidad
+
+- Hay un orden de prioridad (menor a mayor especificidad) para aplicar clases o estilos.
+  - Selectores de tipo (p, h1) elemento y pseudoelementos (::before, ::after).
+  - Selectores de clase (ejempo), selectores de atributo ([type="text"]) y pseudo-clases (:hover)
+  - Selectores ID (#ejemplo)
+Los estilos inline (style="color: darkorange") tienen prioridad sobre los externos.
+
+Hay una calculadora de especificidad. https://specificity.keegan.st/
+
+### Unidades de medida
+
+- Unidades Absolutas:
+- Unidades Relativas: em, ex, vw, vh, %, rem
+
+### Variables. Uso de calc()
+
+- Variables definidas globalmente:
+
+```css
+:root {
+    --color-principal: #06c;
+}
+```
+- Se usan mediante la funcion var()
+
+```css
+#foo h1 {
+    color: var(--color-principal);
+}
+```
+
+- La funcion calc() opera con variables y numeros
+
+```css
+.container {
+    --separacion: 20;
+    margin-top: calc(var(--separacion) * 2px);
+}
+```
+
+### Propidades básicas
+
+### Tiporafía
+- Podemos incluirlas nuevas fuentes de varias formas:
+  - MEdiante la propiedad @font-face
+```css
+@font-face {
+    fons-family: mi fuente;s
+    src: url();
+}
+
+```
+
+- Importandola de webs como Google Fonts
+
+```css
+@import url();
+<link href='' type='text/css'>
+```
+
+### Propiedades para fuentes
+- font-style
+- font-variant
+- font-weight
+- font-size
+- font-family
+- font
+
+### OTras propiedades
+- text-decoration, text-tranform
+- line-height, letter-spacing, word-spacng
+- text
+
+### Colores
+
+* Sistemas de colores
+  *   Nombres
+  *   rgb() -red, green, blue
+  *   hexadecimal (#)
+  *   hsl()
+  *   hue°(matiz), saturation%
+  
+### Degradados
+
+### Sombras
+- Sombras de caja: box-shadow
+- Sombras de texto: text-shadow
+
+## Backgrounds: imágenes y patrones para el fondo
+
+- background-image: url()
+- background-repeat: no-repeat;
+
+### Modelo de caja en CSS. Propiedades y usos
+
+- Contenido
+- Espaciado interno (padding)
+- Borde
+- Imagen de fondo
+- Color de fondo
+- Margen
+
+### Display y posicionamiento
+
+### Display. Opciones básicas
+
+- display: block
+- display: inline
+- display: inline-block
+- display: none
+
+
+### Posicionamiento
+La propiedad `position` nos permite crear estructuras más complejas en nuestros diseños.
+Puede tomar los valores:
+- static (por defecto): sin posicionamiento específico, el navegador decide.
+- relative: se posiciona como static y luego se desplaza, pero reservando el hueco donde estaba.
+- absolute: referencia al ancestro más cecarcano (no static), 
+- fixed: variante del absoluto. Su posición es inamovible.
+
+### Cambios del flujo estático
+- Float: left/right
+- Clear: left / right / both
+
+- Overlow: hidden / auto
