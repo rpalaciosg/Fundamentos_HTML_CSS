@@ -1,0 +1,20 @@
+h1 {
+    color: var(--title-color);
+}
+
+.midiv {
+    border: solid 1px red;
+    padding: 20px;
+}
+
+.midiv > p {
+    border: darkgreen solid 1px;
+    padding: 20px;
+}
+
+.micode {
+    display: none;
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin-top: 50px;
+}
