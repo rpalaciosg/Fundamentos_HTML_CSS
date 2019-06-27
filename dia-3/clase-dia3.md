@@ -20,6 +20,11 @@ color: var(--color-principal);
 
 Es lago complejo, nos permite crear estructuras más complejas en nuestros diseños.
 
+- Static: por defecto, sin posicionamiento especifico
+- Relative: se psiciona como static y luego se desplaza
+- Absolute: referencia al ancestro más cercano (no static)
+- Fixed: variante del absoluto. Su posicion es inamovible.
+ 
 ## CSS reset
 
 Pone en 0 todo.  https://cssreset.com, el problema es que automaticamente te ayuda a hacer mas trabajo.

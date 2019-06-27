@@ -1,20 +1,38 @@
-h1 {
-    color: var(--title-color);
+*, *:after, *:before {
+    box-sizing: border-box;
 }
 
-.midiv {
-    border: solid 1px red;
-    padding: 20px;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.midiv > p {
-    border: darkgreen solid 1px;
-    padding: 20px;
+.prueba {
+    height: 100px;
+    /* margin: 10px; */
+    border: 5px solid gold;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
-.micode {
-    display: none;
-    background-color: cornflowerblue;
-    padding: 10px;
-    margin-top: 50px;
+.prueba3 {
+    position: relative;
+    top:50px;
+    left: 300px;
+}
+
+.prueba2 {
+    position: absoluta;        
+    border-color: green;
+    height: 50px;
+    margin: 0;
+    right: -80px;
+    top: 60px;
+}
+
+.prueba4 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }

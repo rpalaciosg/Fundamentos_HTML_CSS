@@ -24,11 +24,15 @@ body {
 
 .navbar-list {
     list-style-type: none;
-    float: right;    
+    float: right;        
 }
 
 .navbar-item {
     display: inline-block;
+}
+
+.navbar-item:last-child {
+    margin-right: 50px;
 }
 
 .navbar-item > a {
@@ -58,7 +62,7 @@ body {
 
 .header > h1 {
     position: absolute;
-    top: 30vh;
+    bottom: 30vh;
     left: 60vw;
     font-weight: 100;
 }
