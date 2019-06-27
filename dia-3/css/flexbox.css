@@ -1,0 +1,65 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    color: white;
+}
+
+.item-1 {
+    background-color: darkblue;
+}
+
+.item-2 {
+    background-color: darkgray;
+}
+
+.item-3 {
+    background-color: darkorchid;
+}
+
+.item-4 {
+    background-color: darkgoldenrod;
+}
+
+.item-5 {
+    background-color: darkmagenta;
+    font-size: 25px;
+}
+
+.item-6 {
+    background-color: darkgoldenrod;
+    font-size: 12px;
+}
+.item-7 {
+    background-color: darkcyan;
+    font-size: 15px;
+}
+
+.item-8 {
+    background-color: darkorange;
+}
+
+.item-9 {
+    background-color: darkred;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    border: solid 5px red;
+    height: 100vh;
+}
+
+.item {
+    flex:1;
+}

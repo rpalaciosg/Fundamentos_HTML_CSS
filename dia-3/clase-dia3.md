@@ -34,3 +34,10 @@ La evolución del reset, puede ser usar un normalize.css
 https://github.com/necolas/normalize.css/blob/master/normalize.css
 
 
+## FelxBox
+
+Hay una propiedad flex-direction:row;
+- eje principal.
+- eje transversal.
+
+display: flex al contenedor
