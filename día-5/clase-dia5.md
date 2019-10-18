@@ -58,6 +58,7 @@ Bueno ahora lo que sabes donde y cual es el centro de la pantalla. Sabiendo que 
 
 ```css
 .container{
+    ...
     position: absolute;
     left: 50%;
     top: 50%;
@@ -66,4 +67,18 @@ Bueno ahora lo que sabes donde y cual es el centro de la pantalla. Sabiendo que 
 }
 ```
 
-Pero la forma de hacerlo ahora es mas facil.
+Pero la forma de hacerlo ahora es mas facil usando flexbox. 
+Lo que quiero o debo hacer es que se mueva o se centre solo el formulario y que el contenedor ocupe todo el espacio.
+
+```css
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
+
+Esto me sirve para centrarlo horizontalmente, Pero debo recordar que para centrarlo verticalmente debe tener una altura. 
+Necesito que tenga una altura para poder centrar en algun sitio, sino el div el container se autoajusta para ocupar el alto que le quepa al contenido, en este caso deberia establecer un alto para que nuestro contenedor este centrado.
+
+El flex nos ha mejorado bastante la forma de centrar elementos segùn el padre.

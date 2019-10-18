@@ -25,16 +25,30 @@
         }
 
         .container {
-            width: 300px;
-            border: solid 1px gray;
-            margin:0 auto; /*Centrar en horizontal*/
-            /* transform: translate(0,50%); */ /*Intenta*/
+            /*Defino el contenedor a un tamaño ancho fijo y establezco un borde*/
+            /* width: 300px;
+            border: solid 1px gray; */
+
+            /*Esto me permitia Centrar en horizontal*/
+            /* margin:0 auto; */           
             
+            /*Centrado horizontal y vertical forma antigua*/
             /* position: absolute;
             left: 50%;
             top: 50%;
+            transform: translate(-50%, -50%); */ /*Esto lo hago para compesar*/
 
-            transform: translate(-50%, -50%); */
+
+            /* Forma de centrar vertical y horizontalmente con flexbox */
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+        }
+
+        form{
+            border: solid 1px gray;
+            padding: 3rem;
         }
     </style>
 </head>
