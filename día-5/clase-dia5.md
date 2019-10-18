@@ -82,3 +82,8 @@ Esto me sirve para centrarlo horizontalmente, Pero debo recordar que para centra
 Necesito que tenga una altura para poder centrar en algun sitio, sino el div el container se autoajusta para ocupar el alto que le quepa al contenido, en este caso deberia establecer un alto para que nuestro contenedor este centrado.
 
 El flex nos ha mejorado bastante la forma de centrar elementos segùn el padre.
+
+
+### Cambiar el color de las secciones en el CV.
+
+Me quedè en el tiempo 1:16:35
