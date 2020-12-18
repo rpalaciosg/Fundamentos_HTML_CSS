@@ -1,0 +1,54 @@
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.biography {
+  flex: 0 1 60%;
+}
+
+.skills {
+  flex: 0 1 30%;
+}
+
+.skill-name {
+  text-align: right;
+  margin-top: 1rem;
+  font-size: .9rem;
+}
+
+.skillbar-outer {
+  border: solid 1px lightblue;
+  height: 20px;
+  /* 20 - 2px(border) = 18px
+     18px - 14px(inner) = 4px */
+  padding: 2px;
+  border-radius: 10px;
+  margin: .25rem 0 1rem 0;
+}
+
+.skillbar-inner {
+  background-color: lightskyblue;
+  height: 14px;
+  border-radius: 10px;
+  width: 0;
+}
+
+.skill-75 {
+  width: 75%;
+}
+
+.skill-85 {
+  width: 85%;
+}
+
+.skill-95 {
+  width: 95%;
+}
+
+@media all and (max-width: 768px) {
+  .two-columns {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

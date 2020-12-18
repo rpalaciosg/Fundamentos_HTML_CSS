@@ -1,0 +1,32 @@
+/* HEADER */
+
+.header {
+  height: 100vh;
+}
+
+.header-image {
+  height: 100vh;
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.header > h1 {
+  position: absolute;
+  bottom: 30vh;
+  left: 60vw;
+  font-weight: 100;
+}
+
+.header > h1 > span {
+  display: block;
+  font-weight: 700;
+  font-family: juego-tronos;
+}
+
+.header > .tagline {
+  position: absolute;
+  top: 60vh;
+  left: 60vw;
+}

@@ -1,0 +1,52 @@
+@keyframes caida {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideup {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.header > h1 {
+  animation-name: caida;
+  animation-duration: 2s;
+}
+
+.header > .tagline {
+  animation-name: slideup;
+  animation-duration: 2s;
+}
+
+
+
+
+@keyframes aumenta {
+  0% {
+    font-size: 1rem;
+  }
+
+  100% {
+    font-size: 1.2rem;
+  }
+}
+
+/* .logo {
+  animation-name: aumenta;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-direction: alternate;
+} */

@@ -5,115 +5,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>winter is comming</title>
+    <title>Winter is coming</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fluid-typography.css">
+    <link rel="stylesheet" href="css/navbar-flexbox.css">
+    <link rel="stylesheet" href="css/header-flexbox.css">
+    <link rel="stylesheet" href="css/que-hago.css">
+    <link rel="stylesheet" href="css/quien-soy.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/batallas.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
     <nav class="navbar">
+        <div class="logo">Jon Snow</div>
+
+        <input type="checkbox" id="burger-checkbox">
+        <label for="burger-checkbox" class="burger-label"></label>
+
         <ul class="navbar-list">
             <li class="navbar-item"><a href="#inicio">Inicio</a></li>
-            <li class="navbar-item"><a href="#servicios">Qué hago</a></li>
-            <li class="navbar-item"><a href="#acerca-de">Quién soy</a></li>
-            <li class="navbar-item"><a href="#proyectos">Batallas</a></li>
+            <li class="navbar-item"><a href="#que-hago">Qué hago</a></li>
+            <li class="navbar-item"><a href="#quien-soy">Quién soy</a></li>
+            <li class="navbar-item"><a href="#batallas">Batallas</a></li>
             <li class="navbar-item"><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
     <header class="header">
-        <h1>Hola, soy 
-            <span>John Snow</span>
-            Antes conocido como (spoiler alert!!!!)</h1>
-        <div class="header-image"></div>
-        <p class="tagline">Bastardo de Ned Stark, líder de la Guardia de la noche proclamado
-           Rey en el Norte, y ahora leal escudero de Daenerys Targaryen.</p>
+        <h1>Hola, soy
+            <span>Aegon Targaryen</span>
+            Antes conocido como Jon Snow</h1>
+        <!-- <div class="header-image"></div> -->
+        <p class="tagline">
+            Bastardo de Ned Stark, líder de la Guardia de la noche proclamado
+            Rey en el Norte, y ahora leal escudero de Daenerys Targaryen.
+        </p>
     </header>
-    <section id="servicios">
-        <h1>Have a Look at my Services</h1>
-        <article class="letra-arial">
-            <img src="./img/s1.webp" alt="web design">
-            <h2><a href="#">Web Design</a></h2>
-            <p>Lorem ipsum <strong>esto es strong</strong> dolor sit amet, consectetur adipisicing elit.
-                Quam numquam, ea ratione, quae cum magni voluptas corrupti <b>En negrita</b>
-                quos <i>itálica</i> accusantium <em>tenetur</em> tempore similique corporis est aliquid dolorum
-                neque laboriosam<sup>3</sup> hic veritatis<sub>2</sub> esse.
-            </p>
-        </article>
-        <article>
-            <img src="./img/s2.png" alt="mobile design">
-            <h2><a href="#">Mobile Design</a></h2>
-            <p class="letra-arial"><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit.
-                Quam numquam, ea ratione, quae cum magni voluptas corrupti
-                quos accusantium tempore similique corporis est aliquid dolorum
-                neque laboriosam hic veritatis esse.
-            </p>
-        </article>
-        <article>
-            <img src="./img/s3.png" alt="print design">
-            <h2><a href="#">Print Design</a></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Quam numquam, ea ratione, quae cum magni voluptas corrupti
-                quos accusantium tempore similique corporis est aliquid dolorum
-                neque laboriosam hic veritatis esse.
-            </p>
-        </article>
-        <article>
-            <img src="./img/s4.png" alt="interaction design">
-            <h2><a href="#">Interaction Design</a></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Quam numquam, ea ratione, quae cum magni voluptas corrupti
-                quos accusantium tempore similique corporis est aliquid dolorum
-                neque laboriosam hic veritatis esse.
-            </p>
-        </article>
-    </section>
-    <section id="acerca-de">
-        <h1>About Myself</h1>
-    </section>
-    <section id="proyectos">
-        <h1>Latest Done Projects</h1>
-        <!-- <h1>Some Features that Made us Unique</h1>
-        <figure>
-            <img src="img/l1.webp" alt="panda">
-            <figcaption>Pie de imagen</figcaption>
-        </figure>
-        <p>Texto debajo de la imagen que es pie de foto</p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ds5t_v9xgRs" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+    <main>
+        <section id="que-hago">
+            <h1>A qué me dedico</h1>
+            <div class="flex-card-container">
+                <article class="flex-card">
+                    <img src="img/guardia-noche.jpg" alt="Guardia de la noche">
+                    <h2>Guardia de la noche</h2>
+                    <p>
+                        Lorem ipsum <strong>esto es strong</strong> dolor sit,
+                        amet consectetur adipisicing elit. <b>En negrita</b>
+                        Et sequi, asperiores neque facere maxime, dignissimos,
+                        accusantium at <i>itálica</i> autem error ducimus
+                        <em>tenetur</em>. Quasi, doloribus<sup>3</sup>
+                        consequuntur rerum vel esse eligendi laboriosam<sub>2</sub> beatae.
+                    </p>
+                </article>
+                <article class="flex-card">
+                    <img src="img/rey-norte.jpg" alt="Rey en el norte">
+                    <h2>Rey en el norte</h2>
+                    <p>
+                        Etiam est nunc, rutrum in porta eu, faucibus eget ante. Fusce
+                        interdum tellus in neque tincidunt, et vehicula quam ultricies.
+                        Ut sit amet eros turpis. Aenean maximus risus eget nulla bibendum,
+                        a vestibulum elit ornare. Phasellus quam erat, sodales vitae tortor
+                        pulvinar, feugiat efficitur augue.
+                    </p>
+                </article>
+                <article class="flex-card">
+                    <img src="img/cuidador-dragones.jpg" alt="Cuidador de dragones">
+                    <h2>Cuidador de dragones</h2>
+                    <p>
+                        Ut hendrerit sagittis erat, et malesuada arcu eleifend sed.
+                        Sed interdum velit sed sem posuere egestas. Ut efficitur ornare justo,
+                        id consequat enim congue vulputate. Donec posuere, ipsum quis tempor mollis,
+                        enim orci accumsan erat, sed vulputate felis nulla at augue.
+                    </p>
+                </article>
+                <article class="flex-card">
+                    <img src="img/consejero-real.jpg" alt="Consejero real">
+                    <h2>Consejero Real</h2>
+                    <p>
+                        Praesent augue tellus, sodales tincidunt sodales eget, dictum
+                        quis elit. Orci varius natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Nulla scelerisque efficitur sapien,
+                        at semper augue sagittis ac. Maecenas a ultrices dui, non consectetur
+                        leo.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-        <video src="video/Nathan Haines - Ubuntu Through The Years.mp4" controls poster="http://lorempixel.com/300/100">
-            Tu navegador no admite el elemento <code>video</code>.
-        </video> -->
-    </section>
-    <section id="contacto">
-        <h1 class="contact-title">Contacto</h1>
-        <form action="" id="contact-form">
-            <p>
-                <label for="form-name">Nombre:</label>
-                <input type="text" name="form-name" id="form-name">
-            </p>
-            <p>
-                <label for="form-email">email</label>
-                <input type="email" name="form-email" id="form-email">
-            </p>
-            <p>
-                <label for="form-subject">Asunto</label>
-                <input type="text" name="form-subject" id="form-subject">
-            </p>
-            <p>
-                <label for="form-message">Mensaje</label>
-                <textarea name="form-message" id="form-message" cols="30" rows="10"></textarea>
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-            </p>
-        </form>
-    </section>
-    <footer>
+        <section id="quien-soy" class="inverted">
+            <div class="centered">
+                <h1>Quién soy</h1>
+                <div class="two-columns">
+                    <div class="biography">
+                        <h2>Mi historia</h2>
+                        <p>Hijo de Rhaegar Targaryen y Lyanna Stark, soy el último príncipe
+                            de Rocadragón. Fui criado como bastardo de mi tío Lord Eddard Stark
+                            en Invernalia con el nombre de Jon Nieve, para ser protegido de la
+                            aniquilación de la casa Targaryen llevada a cabo por el rey Robert.
+                        </p>
+                        <p>
+                            Me uní a la guardia de la noche llegando a convertirme en el Lord Comandante.
+                            Allí me asesinaron y, usando el poder de R'hllor, la Princesa Roja
+                            Melisandre me resucitó por petición de Ser Davos. Quedé liberado de
+                            mis obligaciones como guardia de la noche...
+                        </p>
+                        <p>Junto a mi hermanastra Sansa Stark y con la ayuda de Ser Davos, Tormund y
+                            Brienne de Tarth, recuperé Invernalia y fui nombrado Rey en el Norte.
+                            Uniéndome a la Reina Dragón para luchar contra nuestro gran enemigo:
+                            el ejército del Rey de la Noche.
+                        </p>
+                        <blockquote>
+                            <p>You've got the North in you - the real North.</p>
+                            <footer>―Tormund</footer>
+                        </blockquote>
+                        <p>Por fin, volví al Castillo Negro, en el muro, para reunirme con Tormund
+                            y volver a donde era mi sitio, al norte, al verdadero norte.
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <picture>
+                            <img src="img/jon-snow-recortada.jpg" alt="Jon Snow">
+                        </picture>
+                        <div class="skill-name">Espada de dos manos</div>
+                        <div class="skillbar-outer">
+                            <div class="skillbar-inner skill-85"></div>
+                        </div>
+                        <div class="skill-name">Montar a caballo</div>
+                        <div class="skillbar-outer">
+                            <div class="skillbar-inner skill-75"></div>
+                        </div>
+                        <div class="skill-name">Luchar en la nieve</div>
+                        <div class="skillbar-outer">
+                            <div class="skillbar-inner skill-95"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="batallas">
+            <h1>Algunas de mis batallas</h1>
+            <div class="grid-container">
+
+                <article>
+                    <h2>La batalla del Castillo Negro</h2>
+                    <img src="img/battle-of-castle-black.jpg" alt="Batalla del Castillo Negro">
+                    <p>
+                        Está encuadrada dentro de la guerra que mantiene la Guardia de la Noche
+                        contra los salvajes (llamados el Pueblo Libre). Esta batalla supone la
+                        derrota de los ejércitos de Mance Rayder y el triunfo de la Guardia con
+                        la colaboración imprescindible de Stannis Baratheon.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>La batalla de los bastardos</h2>
+                    <img src="img/battle-of-bastards.jpg" alt="Batalla de los Bastardos">
+                    <p>
+                        Durante la guerra de los Cinco Reinos, Jon Nieve y Sansa Stark recuperan
+                        Invernalia de la que Ramsay Bolton, el Guardián del Norte, se ha apoderado.
+                        Tras la batalla, la Casa Stark vuelve a controlar el norte.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>La batalla de Invernalia</h2>
+                    <img src="img/battle-of-winterfell.jpg" alt="Batalla de Invernalia">
+                    <p>
+                        Es la batalla final de la Gran Guerra entre una alianza de ejércitos
+                        (como los Starks, Arryns y Targaryans) contra el ejército de los muertos
+                        encabezados por los caminantes blancos.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>La batalla de Desembarco del Rey</h2>
+                    <img src="img/battle-of-kings-landing.jpg" alt="Batalla de Desembarco del Rey">
+                    <p>
+                        Batalla final entre los seguidores de Daenerys Targaryen y las
+                        fuerzas Lannister lideradas por la Reina Cersei Lannister para
+                        controlar Desembarco del Rey, la capital de los Siete Reinos y
+                        conseguir el Trono de Hierro.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="inverted">
+            <div class="centered">
+                <h1>Contacto</h1>
+                <form action="" id="contact-form">
+                    <div class="contact-data">
+                        <p>
+                            <label for="form-name">Nombre:</label>
+                            <input type="text" name="name" id="form-name" placeholder="Quién eres">
+                        </p>
+                        <p>
+                            <label for="form-email">e-mail:</label>
+                            <input type="email" name="form-email" id="form-email" placeholder="Tu email (no SPAM)">
+                        </p>
+                        <p>
+                            <label for="form-subject">Asunto:</label>
+                            <input type="text" name="form-subject" id="form-subject" placeholder="De qué me hablas">
+                        </p>
+                    </div>
+
+                    <div class="message-data">
+                        <p>
+                            <label for="form-message">Mensaje:</label>
+                            <textarea name="form-message" id="form-message" cols="30" rows="10"
+                                placeholder="Deja tu mensaje"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Enviar">
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <aside class="links">
+            <p>Aquí tienes algunos enlaces para saber más sobre mí</p>
+            <ul class="links-list">
+                <li>
+                    <a href="https://gameofthrones.fandom.com/wiki/Jon_Snow">
+                        ¿Qué dicen de mí en Fandom?</a>
+                </li>
+
+                <li>
+                    <a href="https://es.wikipedia.org/wiki/Jon_Nieve">
+                        Wikipedia en español
+                    </a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Jon_Snow_(character)">
+                        Wikipedia en inglés</a>
+                </li>
+            </ul>
+        </aside>
+        <aside class="social">
+            <ul class="social-list">
+                <li><a href="#"><i class="social-facebook"></i></a></li>
+                <li><a href="#"><i class="social-twitter"></i></a></li>
+                <li><a href="#"><i class="social-linkedin"></i></a></li>
+            </ul>
+        </aside>
     </footer>
 </body>
-<!-- Agregando un comentario, prueba para mostrar a Bryan -->
+
 </html>

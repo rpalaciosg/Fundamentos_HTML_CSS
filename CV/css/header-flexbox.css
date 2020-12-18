@@ -1,0 +1,38 @@
+/* HEADER */
+
+.header {
+  height: 100vh;
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header > h1 {
+  font-weight: 100;
+  margin-left: 55vw;
+}
+
+.header > h1 > span {
+  display: block;
+  font-weight: 700;
+  font-family: juego-tronos;
+}
+
+.header > .tagline {
+  margin-left: 55vw;
+}
+
+@media all and (max-width: 768px) {
+  .header > h1, .header > .tagline {
+    margin: 0;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 1rem .5rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, .8);
+  }
+  }

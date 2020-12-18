@@ -1,0 +1,36 @@
+#contact-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-data, .message-data {
+  flex: 0 1 48%;
+}
+
+form label {
+  display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+textarea {
+  width: 100%;
+  /* font-size: 1.1rem; */
+  padding: .5rem;
+}
+
+input[type="submit"] {
+  padding: .5rem;
+  font-size: 1.1rem;
+  min-width: 10rem;
+  border-radius: 20px;
+  border: 0;
+  background: deepskyblue;
+  background: linear-gradient(to right, #CCDDEE, #6DD5FA, #2980B9)
+}
+
+@media all and (max-width: 768px) {
+  #contacto form {
+    flex-direction: column;
+  }
+}

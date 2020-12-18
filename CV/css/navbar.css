@@ -1,0 +1,33 @@
+/* NAVBAR HEADER */
+
+.navbar {
+  background-color: aqua;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-list {
+  list-style-type: none;
+  float: right;
+}
+
+.navbar-item {
+  display: inline-block;
+}
+
+.navbar-item:last-child {
+  margin-right: 50px;
+}
+
+.navbar-item > a {
+  text-decoration: none;
+  color: #222222;
+  padding: 5px;
+}
+
+.navbar-item > a:hover {
+  color: azure;
+  background-color: #222222;
+}
