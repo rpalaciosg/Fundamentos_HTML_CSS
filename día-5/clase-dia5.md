@@ -1,10 +1,15 @@
 # Clase Día 5
 
+Es recomendable, que todos los colores y tipos de letras en css ponerlas en variables
+
 ## Transiciones, transformaciones y animaciones
 
 ### Trasnformaciones
-Tenemos trasnformaicones que nos permiten permiten modificar las coordenadas en las que se encuentra un elemento. Y podemos trasladarlos en el eje x y el eje y.
+
+Tenemos transformaciones que nos permiten permiten modificar las coordenadas en las que se encuentra un elemento. Y podemos trasladarlos en el eje x y el eje y.
+
 Los elementos pueden ser:
+
 - Trasladados: translate, translateX, translateY.
 - Rotados: rotate, rotateX, rotateY.
 - Escalados: scale, scaleX, scaleY.
@@ -75,6 +80,7 @@ Lo que quiero o debo hacer es que se mueva o se centre solo el formulario y que 
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 ```
 
