@@ -128,3 +128,7 @@ section.inverted {
     margin-left: calc(50% - 50vw + .6rem); 
 }
 ```
+
+## CSS Grid
+
+ME quede en dia 5 , tiempo 1:38:15
