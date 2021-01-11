@@ -92,4 +92,39 @@ El flex nos ha mejorado bastante la forma de centrar elementos segùn el padre.
 
 ### Cambiar el color de las secciones en el CV.
 
-Me quedè en el tiempo 1:16:35
+Si queremos dar un background a secciones de forma intercalada, nos encontramos con el problema que a la seccion al darle un ancho fijo o predefinido, no se va a pintar toda la pagina sino que le pondra margenes.
+
+Como podemos solucionar esto? Bueno esto no lo voy a poder arreglar con un solo div. Podria usar 2 divs, uno externo que se extienda por todo el ancho de la pagina, y el interno para el contenido.
+
+Lo que tengo que hacer es saltarme el ancho predefinido o establecido:
+
+```css
+section.inverted {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw); 
+}
+```
+
+Pero luego necesito recuperar el ancho maximo del contenido de mi seccion y esto lo puedo hacer con un segundo div.
+
+Lo que hago es crear un nuevo div con clase .centered que englobe el contenido de la seccion y aplicar un centrado horizontal partiendo de mi ancho maximo.
+
+```css
+section .centered {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+```
+
+Despues de hacer esto nos damos cuenta que tenemos un desfase por el ancho de la barra de scroll. Tenemos que de alguna manera encontrar el ancho de la barra y agragarselo, en este caso le sumamos .6rems
+
+```css
+section.inverted {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    margin-right: calc(50% - 50vw + .6rem);
+    margin-left: calc(50% - 50vw + .6rem); 
+}
+```
